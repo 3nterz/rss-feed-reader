@@ -1,0 +1,6 @@
+[run]
+omit =
+    .venv/*
+    __pycache__/*
+    .vscode/*
+    app_test.py
