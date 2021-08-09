@@ -1,5 +1,4 @@
 from argparse import ArgumentParser, Namespace
-from cgi import test
 import unittest
 import os
 from argparse import ArgumentParser
