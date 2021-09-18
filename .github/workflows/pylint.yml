@@ -20,3 +20,7 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint `ls -R|grep .py$|xargs`
+    - name: Run tests and code coverage
+      run: |
+        coverage run -m unittest app_test feedloaders_test
+        coverage report
