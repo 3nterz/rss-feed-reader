@@ -101,7 +101,7 @@ class TestRSSFeedCLI(unittest.TestCase):
         test_data: RSSFeedChannel = RSSFeedChannel('','','',list[RSSFeedItem]())
         test_data.items.append(test_data_item)
         devnull_file: TextIO
-        with open(os.devnull, 'w') as devnull_file:
+        with open(file=os.devnull, mode='w', encoding='utf-8') as devnull_file:
             cli_writer: RSSFeedReader = get_default_feedreader(file=devnull_file)
             cli_writer.show_rss_feed_content(test_data)
 
@@ -119,7 +119,7 @@ class TestRSSFeedMethods(unittest.TestCase):
         """Verify code statements successful when no arguments provided
         """
         devnull_file: TextIO
-        with open(os.devnull, 'w') as devnull_file:
+        with open(file=os.devnull, mode='w', encoding='utf-8') as devnull_file:
             main(output_stream=devnull_file, args=[])
 
     @staticmethod
@@ -128,5 +128,5 @@ class TestRSSFeedMethods(unittest.TestCase):
         """
         CLIParser._uri = TestRSSFeedMethods.mock_uri_method # pylint: disable=protected-access
         devnull_file: TextIO
-        with open(os.devnull, 'w') as devnull_file:
+        with open(file=os.devnull, mode='w', encoding='utf-8') as devnull_file:
             main(output_stream=devnull_file, args=['--url', 'testing'])
