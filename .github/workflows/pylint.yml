@@ -22,5 +22,5 @@ jobs:
         pylint `ls -R|grep .py$|xargs`
     - name: Run tests and code coverage
       run: |
-        coverage run -m unittest app_test
+        coverage run -m unittest app_test feedloaders_test
         coverage report --fail-under 100
