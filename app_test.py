@@ -19,7 +19,7 @@ class TestRSSFeedDataClasses(unittest.TestCase):
             description='Some description here.',
             link='http://somelink.lnk'
         )
-        expectedRSSFeedItem = RSSFeedItem(None,None,None)
+        expectedRSSFeedItem = RSSFeedItem('','','')
         expectedRSSFeedItem.title = 'Some title'
         expectedRSSFeedItem.description = 'Some description here.'
         expectedRSSFeedItem.link = 'http://somelink.lnk'
@@ -34,7 +34,7 @@ class TestRSSFeedDataClasses(unittest.TestCase):
             link='http://somelink.lnk',
             items=items
         )
-        expectedRSSFeedChannel = RSSFeedChannel(None,None,None,None)
+        expectedRSSFeedChannel = RSSFeedChannel('','','',list[RSSFeedItem]())
         expectedRSSFeedChannel.title = 'Some title'
         expectedRSSFeedChannel.description = 'Some description here.'
         expectedRSSFeedChannel.link = 'http://somelink.lnk'
