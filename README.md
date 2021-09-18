@@ -1,5 +1,7 @@
 # RSS Feed Reader
 
+![Pylint + PyTest](https://github.com/3nter/rss-feed-reader/actions/workflows/pylint.yml/badge.svg)
+
 RSS feed reader in terminal (Open source).
 
 See [RSS feed reader in terminal](https://www.codementor.io/projects/tool/rss-feed-reader-in-terminal-atx32jp82q) for further information.
