@@ -1,4 +1,4 @@
-name: Pylint
+name: Pylint + Test Coverage
 
 on: [push]
 
