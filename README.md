@@ -61,7 +61,13 @@ coverage run -m unittest app_test feedloaders_test
 coverage report
 ```
 
-8. Run the program
+8. Run pylint
+
+```powershell
+pylint (Get-ChildItem -path $FolderPath | Where-Object { $_.Extension -eq ".py"} | Foreach{ $_.Name })
+```
+
+9. Run the program
 
 ```powershell
 python app.py --url url1 --url url2
