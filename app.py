@@ -1,21 +1,8 @@
-from dataclasses import dataclass
 import argparse
 from sys import stdout
 import feedparser
 import html2text
-
-@dataclass
-class RSSFeedItem:
-    title: str
-    description: str
-    link: str
-
-@dataclass
-class RSSFeedChannel:
-    title: str
-    description: str
-    link: str
-    items: list[RSSFeedItem]
+from model import RSSFeedItem, RSSFeedChannel
 
 def build_cli_parser():
     cli_parser = argparse.ArgumentParser(
