@@ -4,3 +4,7 @@ omit =
     __pycache__/*
     .vscode/*
     app_test.py
+    feedloaders_test.py
+[report]
+exclude_lines =
+    if __name__ == .__main__.:

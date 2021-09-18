@@ -2,3 +2,5 @@
 .vscode
 .coverage
 __pycache__
+htmlcov/
+typings/

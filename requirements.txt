@@ -1,4 +1,5 @@
-pylint
-feedparser
-html2text
-coverage
+pylint==2.9.6
+feedparser==6.0.8
+html2text==2020.1.16
+coverage==5.5
+validators==0.18.2
